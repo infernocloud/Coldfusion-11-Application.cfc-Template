@@ -15,7 +15,7 @@ component {
 		Application variables
 		https://wikidocs.adobe.com/wiki/display/coldfusionen/Application+variables
 	*/
-	THIS.name = "YourAppName";
+	THIS.name = "YourAppName" & hash(getCurrentTemplatePath());
 	THIS.applicationTimeout = createTimeSpan(1,0,0,0);
 	THIS.sessionTimeout = createTimeSpan(1,0,0,0);
 	THIS.sessionManagement = true;
